@@ -1,4 +1,3 @@
-
 main() {
   var name = 'Name';
   String name2 = 'Name2';
