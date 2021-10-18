@@ -13,4 +13,7 @@ void main() {
 
   print(gifgs[0]);
   print(gifts2['firs']);
+
+  var g = {'first': 'Mango', 'second': 'Jack' };
+  print(g['first']);
 }
