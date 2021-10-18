@@ -22,15 +22,39 @@ class Person {
   }
 }
 
+class X {
+  final name; // type will be defined by inferred value
+  static const int age = 10;
+
+  X(this.name);
+}
+
 void main() {
-  Person person1 = Person('Name');
-  // person1.age = 30;
-  // person1.name = 'Name';
-  person1.showOutput();
+  final name = 'Mab';
+  const age = 30;
 
-  Person person2 = Person('Jack', 25);
-  person2.showOutput();
+  print(name);
+  print(age);
 
-  var person3 = Person.guest();
-  person3.showOutput();
+  name = '';
+  age = 0;
+  // Person person1 = Person('Name');
+  // // person1.age = 30;
+  // // person1.name = 'Name';
+  // person1.showOutput();
+
+  // Person person2 = Person('Jack', 25);
+  // person2.showOutput();
+
+  // var person3 = Person.guest();
+  // person3.showOutput();
+  var x = X('Name');
+  print(x.name);
+
+  // x.name = 'new';
+  // print(x.name);
+  // print(X.age);
+
+  var y = X('jill');
+  print(y.age);
 }
