@@ -3,11 +3,12 @@
 void main() {
   // Set
   var halogens = <String>{'fluorine', 'chlorine'};
+  Set <String> names = {'Name'};
 
   for (var x in halogens) {
     print(x);
   }
 
-  print(halogens.runtimeType);
+  print(names.runtimeType);
 
 }
