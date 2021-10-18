@@ -22,6 +22,11 @@ class Y extends X {
     print(this.name);
     print('Hello');
   }
+
+  // not using @override at this time
+  dynamic square(dynamic val) {
+    
+  }
 }
 
 
