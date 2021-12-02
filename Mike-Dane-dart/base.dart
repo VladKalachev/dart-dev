@@ -14,10 +14,36 @@ void main() {
   // dynamic name2 = "Name";
 
   String greeting = "Hello";
-  // 01234
+  //                 01234
+
+  String greeting2 = " World";
   
   print(
     greeting.length
+  );
+
+  print(
+    greeting[0]
+  );
+
+  print(
+    greeting.toUpperCase()
+  );
+
+  print(
+    greeting.indexOf("e")
+  );
+
+  print(
+    greeting.contains("e")
+  );
+
+  print(
+    greeting + greeting2
+  );
+
+  print(
+    "The greeting is: ${greeting}"
   );
 
 }
