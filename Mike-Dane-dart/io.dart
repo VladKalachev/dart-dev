@@ -8,5 +8,6 @@ void main() {
   dynamic username = stdin.readLineSync();
   print("Hello ${username}");
   // comments
+  print("Hello ${username}");
 
 }
