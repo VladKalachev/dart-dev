@@ -4,10 +4,13 @@ import 'dart:io';
 
 void main() {
 
-  print("What is your name?:");
-  dynamic username = stdin.readLineSync();
-  print("Hello ${username}");
-  // comments
-  print("Hello ${username}");
+  print("Enter firs number:");
+  dynamic num1 = stdin.readLineSync();
+  print("Enter second number:");
+  dynamic num2 = stdin.readLineSync();
+
+  print(
+    double.parse(num1) + double.parse(num2)
+  );
 
 }
