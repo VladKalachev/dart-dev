@@ -12,19 +12,26 @@ void main(List<String> args) {
   // ];
   // print(list1);
 
-  List<int> numberList = new List.filled(5, 0);
-  numberList[0] = 22;
+  // List<int> numberList = new List.filled(5, 0);
+  // numberList[0] = 22;
+  // print(numberList);
+
+  // for (int i = 0; i < numberList.length; i++) {
+  //   print(numberList[i]);
+  // }
+
+  // for (int element in numberList) {
+  //   print(element);
+  // }
+
+  // numberList.forEach((element) {
+  //  print(element); 
+  // });
+
+  List<dynamic> numberList = [];
+  numberList.add(22);
+  numberList.add("hello");
+  numberList.remove(22);
+  numberList.clear();
   print(numberList);
-
-  for (int i = 0; i < numberList.length; i++) {
-    print(numberList[i]);
-  }
-
-  for (int element in numberList) {
-    print(element);
-  }
-
-  numberList.forEach((element) {
-   print(element); 
-  });
 }
