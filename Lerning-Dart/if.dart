@@ -31,6 +31,10 @@ void main(List<String> args) {
   if (x < y) {
     print(x + y);
   } else {
-    print(x + y);
+    print(x - y);
   }
+
+  int z = x < y ? x + y : x - y;
+  print(z);
+
 }
