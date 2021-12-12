@@ -1,5 +1,7 @@
 void main(List<String> args) {
   sayHello();
+  String myName = getName();
+  print(myName);
 }
 
 void sayHello() {
