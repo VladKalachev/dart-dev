@@ -6,6 +6,9 @@ void main(List<String> args) {
   print(myAge);
   getPerson(name: "Name");
   getPerson();
+
+  var myB = getName;
+  myB(); 
 }
 
 void sayHello() => print("Hello");
