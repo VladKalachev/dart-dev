@@ -4,6 +4,8 @@ void main(List<String> args) {
   print(myName);
   String myAge = getAge(20);
   print(myAge);
+  getPerson(name: "Name");
+  getPerson();
 }
 
 void sayHello() => print("Hello");
@@ -11,6 +13,10 @@ void sayHello() => print("Hello");
 String getName() => "Vlad";
 
 String getAge(int age) => "Your age $age";
+
+void getPerson({ String name = "Test", int age = 30}) {
+  print("Name: $name, Age: $age");
+}
 
 // void sayHello() {
 //   print("Hello");
