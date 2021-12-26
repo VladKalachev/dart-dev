@@ -30,7 +30,6 @@ class Car {
   // }
   // Car(this.carName, [this.color = "Red"]);
 
-
   Car.named() {
     carName = "FORD";
     color = "GREEN";
