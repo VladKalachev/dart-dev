@@ -30,17 +30,22 @@ class Car {
   // }
   // Car(this.carName, [this.color = "Red"]);
 
-  Car.named() {
-    carName = "FORD";
-    color = "GREEN";
-  }
+  Car.named(): this("FORD", "GREEN");
 
-  Car.fromColor(var color) {
-    carName = "RED";
-    this.color = color;
-  }
+  // Car.named() {
+  //   carName = "FORD";
+  //   color = "GREEN";
+  // }
 
-  Car(this.carName, {this.color = "Red"});
+  Car.fromColor(var color): this("RENO", color);
+  
+  // Car.fromColor(var color) {
+  //   carName = "RED";
+  //   this.color = color;
+  // }
+
+  Car(this.carName, this.color);
+  // Car(this.carName, {this.color = "Red"});
 
   void start() {
     print("The $color $carName has started.");
