@@ -24,7 +24,6 @@ class Car {
   var carName;
   var color;
 
-
   // Car(String carName, var color) {
   //   this.carName = carName;
   //   this.color = color;
