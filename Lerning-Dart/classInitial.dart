@@ -4,7 +4,6 @@ void main(List<String> args) {
 }
 
 class Car {
-
   String carName;
   double percentWay;
 
