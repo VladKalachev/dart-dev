@@ -1,5 +1,5 @@
 void main(List<String> args) {
-  var myCar = Car("BMW", 100, 'Red');
+  var myCar = Car("BMW", 100, 'White');
   myCar.start();
   // myCar.carName = "BMW";
   // myCar.color = "Red";
@@ -28,6 +28,16 @@ class Car extends Vehicle {
     this.carName = carName;
     this.speed = speed;
     print("Call Car.Name: $carName, Color: $color");
+  }
+
+  String get color => super.color;
+
+  void set color(String value) {
+    if(value == "Black") {
+      throw ArgumentError("Pleas, set other color.");
+    }
+
+    super.color = color;
   }
 
   @override
