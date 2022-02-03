@@ -11,6 +11,8 @@ printFileContent() {
   Future<String> fileContent = dowenloadFile();
   fileContent.then((resultString) => {
     print("The content on the file is --> $resultString")
+  }).catchError((error) => {
+    print("The file not found")
   });
 }
 
