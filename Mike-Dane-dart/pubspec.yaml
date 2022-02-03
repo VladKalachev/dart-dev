@@ -1,0 +1,6 @@
+name: demo
+description: demo
+version: 1.0.0
+
+dependencies:
+  http: ^0.13.4
