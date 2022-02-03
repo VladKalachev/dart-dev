@@ -9,7 +9,9 @@ void main(List<String> args) {
 
 printFileContent() {
   Future<String> fileContent = dowenloadFile();
-  print("The content on the file is --> $fileContent");
+  fileContent.then((resultString) => {
+    print("The content on the file is --> $resultString")
+  });
 }
 
 dowenloadFile() {
