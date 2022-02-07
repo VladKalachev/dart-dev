@@ -19,8 +19,13 @@ void main(List<String> args) {
 
 printFileContent() async {
   try {
+    String time = await HttpRequest.getString("https://rebounce.online/api/time");
+    print(time);
     String fileContent = await dowenloadFile();
     print("The content on the file is --> $fileContent");
+
+    String time1 = await HttpRequest.getString("https://rebounce.online/api/time");
+    print(time1);
   } catch (error) {
     print("Catching error: $error");
   }
