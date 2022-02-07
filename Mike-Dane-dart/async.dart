@@ -8,13 +8,23 @@ void main(List<String> args) {
 }
 
 
-printFileContent() {
-  Future<String> fileContent = dowenloadFile();
-  fileContent.then((resultString) => {
-    print("The content on the file is --> $resultString")
-  }).catchError((error) => {
-    print("The file not found")
-  });
+// printFileContent() {
+//   Future<String> fileContent = dowenloadFile();
+//   fileContent.then((resultString) => {
+//     print("The content on the file is --> $resultString")
+//   }).catchError((error) => {
+//     print("The file not found")
+//   });
+// }
+
+printFileContent() async {
+  try {
+    String fileContent = await dowenloadFile();
+    print("The content on the file is --> $fileContent");
+  } catch (error) {
+    print("Catching error: $error");
+  }
+
 }
 
 dowenloadFile() {
