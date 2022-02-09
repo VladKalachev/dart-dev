@@ -7,7 +7,6 @@ void main(List<String> args) {
   print("The Main program: Ends");
 }
 
-
 // printFileContent() {
 //   Future<String> fileContent = dowenloadFile();
 //   fileContent.then((resultString) => {
@@ -16,7 +15,6 @@ void main(List<String> args) {
 //     print("The file not found")
 //   });
 // }
-
 
 printFileContent() async {
   try {
@@ -30,7 +28,6 @@ printFileContent() async {
   } catch (error) {
     print("Catching error: $error");
   }
-
 }
 
 dowenloadFile() {
